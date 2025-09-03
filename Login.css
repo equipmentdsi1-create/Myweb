@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* ensures it stays behind the login box */
+}
+#musicBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;  /* same padding as login button */
+  border-radius: 10px; /* same roundness */
+  cursor: pointer;
+  font-size: 1rem;     /* same font size */
+  z-index: 10;
+  transition: 0.3s;
+}
+
+#musicBtn:hover {
+  background: #ff3355;
+  transform: scale(1.05);
+}
+
+/* Login box */
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 300px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ff4d6d;
+}
+
+p {
+  color: #444;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #ff4d6d;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+button {
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff3355;
+  transform: scale(1.05);
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
