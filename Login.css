@@ -86,3 +86,26 @@ button:hover {
   color: red;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  #bg-video {
+    display: none;
+  }
+
+  body {
+    background: url("mobile-wallpaper.jpg") no-repeat center center/cover;
+  }
+
+  .container {
+    max-width: 90%; 
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input, button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
