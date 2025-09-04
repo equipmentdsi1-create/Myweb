@@ -12,8 +12,7 @@
  </video>
 
  <audio id="bg-music" loop>
-    <source src="loginpagemusic.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
+    <source src="Loginpagemusic.mp3" type="audio/mpeg">
  </audio>
 
 <div class="container">
@@ -46,9 +45,22 @@
         window.location.href = "invitation.html";
       } else {
         errorMsg.textContent = "Incorrect password. Try again!";
-      }
+
+const music = document.getElementById("bg-music");
+  const musicBtn = document.getElementById("musicBtn");
+  let isPlaying = false;
+
+  function toggleMusic() {
+    if (!isPlaying) {
+      music.play();
+      musicBtn.textContent = "⏸ Pause Music";
+      isPlaying = true;
+    } else {
+      music.pause();
+      musicBtn.textContent = "🎵 Play Music";
+      isPlaying = false;
     }
+  }
   </script>
 </body>
 </html>
-
