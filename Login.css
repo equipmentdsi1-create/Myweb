@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  overflow: hidden；
+  overflow: hidden;
 }
 
 #bg-video {
@@ -39,10 +39,10 @@ body {
   background: #ff4d6d;
   color: white;
   border: none;
-  padding: 10px 20px;  /* same padding as login button */
-  border-radius: 10px; /* same roundness */
+  padding: 10px 20px;  
+  border-radius: 10px; 
   cursor: pointer;
-  font-size: 1rem;     /* same font size */
+  font-size: 1rem;     
   z-index: 10;
   transition: 0.3s;
 }
@@ -132,5 +132,9 @@ button {
     font-size: 0.9rem;
     padding: 8px;
   }
+}
+
+#musicBtn {
+  pointer-events: auto;
 }
 
